@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="northladder.css">
+    <title>Completed Projects — Northladder Constructions</title>
+</head>
+<body>
+    <div class="aboutusbar"><a href="index.html">Home</a>|<a href="" style="color: #007BFF;">Completed Projects</a></div>
+    
+    <!-- Project 1 -->
+    <div class="about-container">
+        <div class="about-left">
+            <div class="slideshow-container" id="project1-slideshow">
+                <div class="slide fade">
+                    <img src="olympus1.jpeg" alt="Project 1 - Phase 1">
+                </div>
+                <div class="slide fade">
+                    <img src="olympus2.jpeg" alt="Project 1 - Phase 2">
+                </div>
+                <div class="slide fade">
+                    <img src="olympus3.jpeg" alt="Project 1 - Completed">
+                </div>
+                <div class="dots-container">
+                    <span class="dot" onclick="switchProject('project1', 0)"></span>
+                    <span class="dot" onclick="switchProject('project1', 1)"></span>
+                    <span class="dot" onclick="switchProject('project1', 2)"></span>
+                </div>
+            </div>
+        </div>
+        <div class="about-right">
+            <h1>Northladder Olympus — Hyderabad</h1>
+            <p><strong>Location: </strong><a target="_blank" href="https://maps.app.goo.gl/XMcQL31C1dDvhvQGA?g_st=aw" >pragathinagar, Hyderabad, Telangana</a> </p>
+            <p><strong>Project Type:</strong> Residential (15 flats)</p>
+            <p><strong>Duration:</strong> September 2024 — December 2025</p>
+            <p><strong>Area:</strong> 18,450 Sq. Ft. built-up area</p>
+            <p><strong>Highlights:</strong></p>
+            <ul>
+                <li>Modern architectural design with sustainable practices</li>
+                <li>top-class amenities: water softner, solar fencing, parking, automatic elevator</li>
+                <li>Building is at query view landscaping</li>
+                <li>Advanced security and smart home integration</li>
+                <li>100% completion on schedule with zero safety incidents</li>
+            </ul>
+            <p><strong>Client Satisfaction:</strong> Exceptional (99% occupancy within 6 months)</p>
+        </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="about-container">
+        <div class="about-left">
+            <div class="slideshow-container" id="project2-slideshow">
+                <div class="slide fade">
+                    <img src="pexels-pixabay-416405.jpg" alt="Project 2 - Phase 1">
+                </div>
+                <div class="slide fade">
+                    <img src="sketch-architect-supplies (1).jpg" alt="Project 2 - Phase 2">
+                </div>
+                <div class="slide fade">
+                    <img src="image-blueprints-with-level-pencil-hard-hat-table.jpg" alt="Project 2 - Completed">
+                </div>
+                <div class="dots-container">
+                    <span class="dot" onclick="switchProject('project2', 0)"></span>
+                    <span class="dot" onclick="switchProject('project2', 1)"></span>
+                    <span class="dot" onclick="switchProject('project2', 2)"></span>
+                </div>
+            </div>
+        </div>
+        <div class="about-right">
+            <h1>Commercial Office Tower — Hyderabad</h1>
+            <p><strong>Location:</strong> HITEC City, Hyderabad, Telangana</p>
+            <p><strong>Project Type:</strong> Commercial (Grade-A office tower)</p>
+            <p><strong>Duration:</strong> March 2022 — June 2024</p>
+            <p><strong>Area:</strong> 4.8 Lakh Sq. Ft. carpet area</p>
+            <p><strong>Highlights:</strong></p>
+            <ul>
+                <li>22-storey state-of-the-art office tower</li>
+                <li>LEED Gold certification for green building</li>
+                <li>High-speed elevators and premium finishes</li>
+                <li>Spacious parking (2,000+ vehicles)</li>
+                <li>IoT-enabled facilities management system</li>
+                <li>Pre-leased to Fortune 500 companies</li>
+            </ul>
+            <p><strong>Project Value:</strong> ₹400+ Crores</p>
+        </div>
+    </div>
+
+    <script src="northladder.js"></script>
+    <script>
+        let project1Slide = 0;
+        let project2Slide = 0;
+
+        function switchProject(projectId, slideIndex) {
+            const container = document.getElementById(projectId + '-slideshow');
+            const slides = container.querySelectorAll('.slide');
+            const dots = container.querySelectorAll('.dot');
+
+            if (projectId === 'project1') {
+                project1Slide = slideIndex;
+            } else {
+                project2Slide = slideIndex;
+            }
+
+            slides.forEach(slide => slide.style.display = 'none');
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            slides[slideIndex].style.display = 'block';
+            dots[slideIndex].classList.add('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            switchProject('project1', 0);
+            switchProject('project2', 0);
+        });
+    </script>
+</body>
+</html>

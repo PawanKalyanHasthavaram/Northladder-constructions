@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>northladder Constructions</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navleft">
+
+        </div>
+        <div class="navright">
+            <div class="navrighttop">
+                <h1>Nortladder Constructions</h1>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <div class="navrightbottom">
+                <a href="#home" class="active">Home</a>
+                <a href="aboutus.html" class="active">About Us</a>
+                <a href="completedProject.html" class="active">Completed Projects</a>
+                <a href="#ongoing-projects" class="active">Ongoing Projects</a>
+                <a href="#contact-us" class="active">Contact Us</a>
+                <!--<a href="https://google.com" target="_blank">google</a>-->
+            </div>
+        </div>
+    </div>
+    <div id="home">
+        <div class="slideshow-container" id="main-slideshow">
+            <div class="slide fade">
+                <img src="image-blueprints-with-level-pencil-hard-hat-table.jpg" alt="Modern Construction">
+                <div class="slide-content">
+                    <h2>Building Tomorrow, Today</h2>
+                    <p>We construct premium residential and commercial spaces with precision, innovation, and quality.
+                        Our dedicated team ensures every project exceeds expectations.</p>
+                </div>
+            </div>
+
+            <div class="slide fade">
+                <img src="pexels-pixabay-416405.jpg" alt="Professional Team">
+                <div class="slide-content">
+                    <h2>Expert Craftsmanship</h2>
+                    <p>With over a decade of experience, our engineers and architects deliver world-class construction
+                        solutions. We pride ourselves on safety, sustainability, and timely delivery.</p>
+                </div>
+            </div>
+
+            <div class="slide fade">
+                <img src="sketch-architect-supplies (1).jpg" alt="Completed Project">
+                <div class="slide-content">
+                    <h2>Transforming Visions into Reality</h2>
+                    <p>From concept to completion, Northladder Constructions brings your dreams to life. Join hundreds
+                        of satisfied clients who trust us with their most important investments.</p>
+                </div>
+            </div>
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+    </div>
+    <div id="ongoing-projects">
+        <!-- Project 1 -->
+        <div class="about-container">
+            <div class="about-left">
+                <div class="slideshow-container" id="ongoing1-slideshow">
+                    <div class="slide fade">
+                        <img src="image-blueprints-with-level-pencil-hard-hat-table.jpg"
+                            alt="Ongoing Project 1 - Foundation">
+                    </div>
+                    <div class="slide fade">
+                        <img src="pexels-pixabay-416405.jpg" alt="Ongoing Project 1 - Structure">
+                    </div>
+                    <div class="slide fade">
+                        <img src="sketch-architect-supplies (1).jpg" alt="Ongoing Project 1 - Progress">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot" onclick="switchOngoing('ongoing1', 0)"></span>
+                        <span class="dot" onclick="switchOngoing('ongoing1', 1)"></span>
+                        <span class="dot" onclick="switchOngoing('ongoing1', 2)"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-right">
+                <h1>Premium Mixed-Use Development — Bangalore</h1>
+                <p><strong>Location:</strong> Whitefield, Bangalore, Karnataka</p>
+                <p><strong>Project Type:</strong> Mixed-use (Residential + Retail + Office)</p>
+                <p><strong>Timeline:</strong> June 2023 — December 2025</p>
+                <p><strong>Current Status:</strong> 65% Complete (Structural phase ongoing)</p>
+                <p><strong>Area:</strong> 3.2 Lakh Sq. Ft. total development</p>
+                <p><strong>Project Details:</strong></p>
+                <ul>
+                    <li>300+ residential units with modern architecture</li>
+                    <li>50,000 Sq. Ft. retail and dining zone</li>
+                    <li>80,000 Sq. Ft. corporate office space</li>
+                    <li>Integrated smart building management</li>
+                    <li>Rainwater harvesting and solar energy systems</li>
+                    <li>Multi-level underground parking (1,500+ vehicles)</li>
+                </ul>
+                <p><strong>Expected Completion:</strong> December 2025</p>
+                <p><strong>Investment Value:</strong> ₹550+ Crores</p>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="about-container">
+            <div class="about-left">
+                <div class="slideshow-container" id="ongoing2-slideshow">
+                    <div class="slide fade">
+                        <img src="pexels-pixabay-416405.jpg" alt="Ongoing Project 2 - Site Prep">
+                    </div>
+                    <div class="slide fade">
+                        <img src="sketch-architect-supplies (1).jpg" alt="Ongoing Project 2 - Excavation">
+                    </div>
+                    <div class="slide fade">
+                        <img src="image-blueprints-with-level-pencil-hard-hat-table.jpg"
+                            alt="Ongoing Project 2 - Foundation">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot" onclick="switchOngoing('ongoing2', 0)"></span>
+                        <span class="dot" onclick="switchOngoing('ongoing2', 1)"></span>
+                        <span class="dot" onclick="switchOngoing('ongoing2', 2)"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-right">
+                <h1>Smart City IT Park — Hyderabad</h1>
+                <p><strong>Location:</strong> Chandanagar, Hyderabad, Telangana</p>
+                <p><strong>Project Type:</strong> Commercial IT Park</p>
+                <p><strong>Timeline:</strong> September 2023 — March 2026</p>
+                <p><strong>Current Status:</strong> 45% Complete (Structural work in progress)</p>
+                <p><strong>Area:</strong> 5.5 Lakh Sq. Ft. built-up area</p>
+                <p><strong>Project Details:</strong></p>
+                <ul>
+                    <li>5 interconnected office towers (18-25 storeys each)</li>
+                    <li>Capacity for 8,000+ IT professionals</li>
+                    <li>Advanced ventilation and air filtration systems</li>
+                    <li>High-speed connectivity and data center facilities</li>
+                    <li>On-site cafeteria, gymnasium, and recreation zones</li>
+                    <li>Dedicated shuttle services and EV charging stations</li>
+                    <li>LEED Gold green building certification target</li>
+                </ul>
+                <p><strong>Expected Completion:</strong> March 2026</p>
+                <p><strong>Investment Value:</strong> ₹750+ Crores</p>
+            </div>
+        </div>
+    </div>
+    <div id="contact-us">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            
+            <div class="contact-simple">
+                <div class="contact-col">
+                    <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+</svg>
+</svg> Address</h3>
+                    <p>Plno 77 78 79 Alkapur Town Ship, Neknapur<br>Hyderabad, Telangana 500089</p>
+                </div>
+                
+                <div class="contact-col">
+                    <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg> Phone</h3>
+                    <p><a href="tel:+919876543210">+91 9876543210</a><br><a href="tel:+919876543211">+91 9876543211</a></p>
+                </div>
+                
+                <div class="contact-col">
+                    <h3>✉️ Email</h3>
+                    <p><a href="mailto:info@northladder.com">info@northladder.com</a><br><a href="mailto:support@northladder.com">support@northladder.com</a></p>
+                </div>
+                
+                <div class="contact-col">
+                    <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+</svg> Hours</h3>
+                    <p>Mon - Fri: 9 AM - 6 PM<br>Sat: 10 AM - 3 PM</p>
+                </div>
+            </div>
+
+            <div class="contact-footer-simple">
+                <div class="social-simple">
+                    <a href="https://facebook.com/northladder" target="_blank">Facebook</a>
+                    <a href="https://twitter.com/northladder" target="_blank">Twitter</a>
+                    <a href="https://linkedin.com/company/northladder" target="_blank">LinkedIn</a>
+                    <a href="https://instagram.com/northladder" target="_blank">Instagram</a>
+                </div>
+                <p style="margin-top: 20px; font-size: 13px; opacity: 0.8;">&copy; 2024 Northladder Constructions | CIN: U45209TG2021PTC148791</p>
+            </div>
+        </div>
+    </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            </div>
+        </div>
+    </div>
+
+    <!-- Fixed Buttons -->
+    <a href="#contact-us" class="contact-btn" title="Contact Us">
+        ✉️
+    </a>
+    <button class="scroll-to-top" title="Back to Top">
+        ↑
+    </button>
+
+    <link rel="stylesheet" href="northladder.css">
+    <script src="northladder.js"></script>
+</body>
+
+</html>
