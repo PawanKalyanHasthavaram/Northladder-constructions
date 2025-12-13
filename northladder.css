@@ -496,9 +496,10 @@
 
     .contact-btn, .scroll-to-top { width: 44px; height: 44px; font-size: 18px; }
 }
-@media(max-width:356px){
+@media(max-width:415px){
     .navleft {
         margin-left:36%;
     }
 }
+
 
