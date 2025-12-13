@@ -375,7 +375,7 @@
 }
 
 /* Additional responsive tweaks for smaller devices */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .navbar {
         flex-direction: column;
         align-items: stretch;
@@ -476,6 +476,9 @@
 }
 
 @media (max-width: 320px) {
+    .navleft {
+        margin-left:30%;
+    }
     .navrighttop h1 { font-size: 16px; }
     .navrightbottom { font-size: 13px; gap: 6px; }
     .slideshow-container { height: 220px; }
