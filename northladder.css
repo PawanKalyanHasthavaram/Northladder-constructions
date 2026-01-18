@@ -35,6 +35,11 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.navrighttop h1:hover{
+    color: #007BFF;
+    transition: 0.3s;
+    background-color: #f0f8ff;
+}
 .navrightbottom{
     display: flex;
     justify-content: center;
