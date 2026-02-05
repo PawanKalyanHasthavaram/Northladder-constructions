@@ -3,7 +3,12 @@
     margin: 0px;
     padding: 0px;
     font-family: comfortaa, sans-serif;
+    box-sizing: border-box;
+}
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
 }
 .navbar{
     width: 100%;
@@ -31,14 +36,10 @@
 }
 .navrighttop h1{
     font-size: 35px;
-    color: #333333;
+    color: #007BFF;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-.navrighttop h1:hover{
-    color: #007BFF;
-    transition: 0.3s;
-    background-color: #f0f8ff;
+    font-family: 'Times New Roman', serif;
 }
 .navrightbottom{
     display: flex;
@@ -175,6 +176,7 @@
     gap: 30px;
     padding: 40px;
     align-items: stretch;
+    justify-content: center;
 }
 
 .about-left {
