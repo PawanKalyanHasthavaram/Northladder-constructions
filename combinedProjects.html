@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="northladder.css">
+    <title>Completed Projects — Northladder Constructions</title>
+</head>
+
+<body>
+    <div class="aboutusbar"><a href="index.html">Home</a>|<a href="" style="color: #007BFF;">Combined Projects</a></div>
+
+    <!-- Project 1 -->
+    <div class="about-container">
+        <div class="about-left">
+            <div class="slideshow-container" id="project1-slideshow">
+                
+                <div class="slide fade">
+                    <img src="sereneVille11.jpg" alt="Project 1 - Phase 2">
+                </div>
+                <div class="slide fade">
+                    <img src="sereneVille12.jpg" alt="Project 1 - Phase 1">
+                </div>
+                <div class="slide fade">
+                    <img src="sereneVille13.jpg" alt="Project 1 - Phase 2">
+                </div>
+                <div class="slide fade">
+                    <img src="sereneVille2.jpg" alt="Project 1 - Phase 1">
+                </div>
+                <div class="slide fade">
+                    <img src="sereneVille3.jpg" alt="Project 1 - Phase 2">
+                </div>
+                <div class="dots-container">
+                    <span class="dot" onclick="switchProject('project1', 1)"></span>
+                    <span class="dot" onclick="switchProject('project1', 0)"></span>
+                    <span class="dot" onclick="switchProject('project1', 1)"></span>
+                    <span class="dot" onclick="switchProject('project1', 0)"></span>
+                    <span class="dot" onclick="switchProject('project1', 1)"></span>
+                </div>
+            </div>
+        </div>
+        <div class="about-right">
+            <h1>Serene Ville — Hyderabad</h1>
+            <h1>Northladder Constructions along with SSD</h1>
+            <p><strong>Location: </strong><a target="_blank" href="https://maps.app.goo.gl/PGpDkmLT4ydEjZ2w6">Narsingi,
+                    Hyderabad, Telangana</a> </p>
+            <p><strong>Project Type:</strong> Residential villas(14 units)</p>
+            <p><strong>Duration:</strong> September 2024 — December 2025</p>
+            <p><strong>Area:</strong> 1 Acre</p>
+            <p><strong>Amenities:</strong>Club House, Gymnasium, Indoor Games, Banquet hall, Swimming Pool, Play Area,
+                Land scaping, Security, Back up power for common areas, Harvesting pit, Solar fencing, Cctv & intercome
+            </p>
+            <p><strong>Location Advantages:</strong>
+            <p>
+            <p>Cyber towers-8km</p>
+            <p>Inorbit mall-6km</p>
+            <p>Outer ring road-1km</p>
+            <p>Continental hospital-5km</p>
+            <p>Mehadipatnam-10km</p>
+            </p>
+            </p>
+
+        </div>
+    </div>
+
+    <!-- Project 2 -->
+
+    <div class="about-container">
+        <div class="about-left">
+            <div class="slideshow-container" id="project2-slideshow">
+                <div class="slide fade">
+                    <img src="fourSquare1.jpeg" alt="Project 2 - Phase 1">
+                </div>
+                <div class="slide fade">
+                    <img src="fourSquare2.jpeg" alt="Project 2 - Phase 2">
+                </div>
+                <div class="dots-container">
+                    <span class="dot" onclick="switchProject('project2', 0)"></span>
+                    <span class="dot" onclick="switchProject('project2', 1)"></span>
+                </div>
+            </div>
+        </div>
+        <div class="about-right">
+            <h1>Four Square — Hyderabad</h1>
+            <h1>Northladder Constructions along with Inspire infra</h1>
+            <p><strong>Location: </strong><a href="https://maps.app.goo.gl/z4NPhtdeNJNdCXY3A" target="_blank">Narsingi,
+                    Hyderabad, Telangana</a> </p>
+            <p><strong>Project Type:</strong> Residential Appartment (60 units)</p>
+            <p><strong>Duration:</strong> March 2023 — march 2025</p>
+            <p><strong>Area:</strong> 0.54 acre</p>
+            <p><strong>Amenities:</strong>Maintenance, Security, Lift, Wifi, Gas Pipeline, Fire Safety
+            </p>
+            <p><strong>Key Futures:</strong>
+            <p>
+            <p>Well-maintained society</p>
+            <p>Good Connectivity</p>
+            <p>Peaceful atmosphere</p>
+            </p>
+            </p>
+            </ul>
+        </div>
+    </div>
+
+    <script src="northladder.js"></script>
+    <script>
+        let project1Slide = 0;
+        let project2Slide = 0;
+
+        function switchProject(projectId, slideIndex) {
+            const container = document.getElementById(projectId + '-slideshow');
+            const slides = container.querySelectorAll('.slide');
+            const dots = container.querySelectorAll('.dot');
+
+            if (projectId === 'project1') {
+                project1Slide = slideIndex;
+            } else {
+                project2Slide = slideIndex;
+            }
+
+            slides.forEach(slide => slide.style.display = 'none');
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            slides[slideIndex].style.display = 'block';
+            dots[slideIndex].classList.add('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            switchProject('project1', 0);
+            switchProject('project2', 0);
+        });
+    </script>
+</body>
+
+</html>
